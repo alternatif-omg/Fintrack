@@ -1,0 +1,43 @@
+/* CSS untuk tabel hasil rekapan */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #ffbb00;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* CSS untuk pesan jika tidak ada hasil */
+p.no-results {
+    text-align: center;
+    font-style: italic;
+    color: #ffbb00;
+    margin-top: 20px;
+}
+
+/* CSS tambahan untuk kontainer hasil rekapan */
+.result-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS untuk judul hasil rekapan */

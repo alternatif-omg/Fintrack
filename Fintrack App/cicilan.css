@@ -1,0 +1,137 @@
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f3f3f3;
+}
+
+.container {
+   max-width: auto;
+   margin: 20px auto;
+   display: flex;
+   flex-direction: row;
+}
+
+#sidebar {
+   width: 200px;
+   background-color: #333;
+   padding: 20px;
+   color: #fff;
+}
+
+form {
+   flex-grow: 1;
+   padding: 20px;
+   background-color: #f9f9f9;
+   border-radius: 15px;
+   margin-left: 20px;
+}
+
+h1 {
+   text-align: center;
+   color: #333;
+}
+
+label {
+   display: block;
+   margin-bottom: 10px;
+   font-weight: bold;
+}
+
+input[type="number"],
+input[type="date"],
+textarea {
+   width: 100%;
+   padding: 8px;
+   margin-bottom: 15px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   box-sizing: border-box;
+   font-size: 16px;
+}
+
+textarea {
+   resize: vertical;
+}
+
+.form-buttons {
+   display: flex;
+   justify-content: flex-start; /* Align buttons to the left */
+   gap: 10px; /* Add space between buttons */
+}
+
+.form-buttons button,
+.form-buttons input[type="submit"] {
+   background-color: orange;
+   color: black;
+   border: none;
+   border-radius: 5px;
+   padding: 10px 20px;
+   cursor: pointer;
+   font-size: 16px;
+}
+
+.form-buttons button:hover,
+.form-buttons input[type="submit"]:hover {
+   background-color: goldenrod;
+}
+
+.error {
+   color: red;
+   margin-top: 10px;
+   text-align: center;
+}
+
+.back-to-dashboard button {
+   background-color: #333;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   padding: 10px 20px;
+   cursor: pointer;
+   font-size: 16px;
+}
+
+.back-to-dashboard button:hover {
+   background-color: #555;
+}
+
+.sidebar {
+   display: flex;
+   flex-direction: column;
+   margin-left: 20px;
+   height: 100vh;
+   overflow-y: auto;
+}
+
+.actions button {
+   margin-bottom: 10px;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   background-color: #007bff;
+   color: #fff;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.sidebar button {
+   background-color: transparent;
+   border: none;
+   color: #fff;
+   padding: 10px 0;
+   text-align: left;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+}
+
+.sidebar button img {
+   margin-right: 10px;
+   width: auto;
+   height: auto;
+}
+
+.actions button:hover {
+   background-color: #0056b3;
+}

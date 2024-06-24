@@ -1,0 +1,224 @@
+/* CSS */
+body {
+   font-family: 'Quicksand', sans-serif; /* Menggunakan Quicksand sebagai font utama, dengan fallback ke font sans-serif jika Quicksand tidak tersedia */
+   margin: 0;
+   padding: 0;
+   background-color: #f3f3f3;
+}
+
+.container {
+   max-width: auto;
+   max-height: auto;
+   margin: 20px auto;
+   display: flex;
+   flex-direction: row;
+}
+
+#sidebar {
+   width: 1250px; /* Adjust the width as needed */
+   background-color: #333;
+   padding: 20px;
+   color: #fff;
+   
+}
+
+#content {
+   flex-grow: 1;
+   padding: 20px;
+}
+
+h1 {
+   text-align: center;
+   color: #333;
+}
+
+form {
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+#datepicker {
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   width: 200px;
+}
+
+.dashboard {
+   display: flex;
+   flex-direction: column;
+   height: 160px;
+   align-items: center;
+   margin-top: 20px;
+   padding: 20px;
+   border-radius: 15px;
+   background-color: #f9f9f9;
+}
+
+.info {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+}
+
+.info-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: right;
+   margin: 0 10px;
+}
+
+.info-container img {
+   width: auto;
+   height: auto;
+}
+
+.info-container .info-text {
+   margin-top: -50px;
+   margin-bottom: 20px;
+   color: black;
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.details-container {
+   width: 100%;
+   margin-top: 80px;
+   background-color: white;
+   padding: 80px;
+   border-radius: 15px;
+   text-align: left; /* Menambahkan text-align: left di sini */
+}
+
+.details {
+   margin-top: 90px;
+   margin-right: 560px; /* Mengurangi margin-top untuk menjaga jarak dari info-container */
+}
+
+.details p {
+   margin: 3px 0;
+   color: black;
+   text-align: left; /* Menambahkan aturan text-align: left di sini */
+}
+
+.sidebar {
+   display: flex;
+   flex-direction: column;
+   margin-left: 20px;
+   height: 100vh;
+   overflow-y: auto;
+}
+
+.actions button {
+   margin-bottom: 10px;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   background-color: #007bff;
+   color: #fff;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.sidebar button {
+   background-color: transparent;
+   border: none;
+   color: #fff;
+   padding: 10px 0;
+   text-align: left;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+}
+
+.sidebar button img {
+   margin-right: 10px;
+   width: auto;
+   height: auto;
+}
+
+.actions button:hover {
+   background-color: #0056b3;
+}
+
+/* CSS utama */
+.details {
+    display: flex;
+    justify-content: space-between; /* Item akan terpisah secara merata */
+}
+
+.income-section,
+.expense-section {
+    flex-basis: 48%; /* Lebar minimum untuk menjaga tata letak */
+    width: 48%; /* Lebar item menyesuaikan layar */
+}
+
+.income-section {
+    order: 1; /* Pemasukan akan muncul setelah pengeluaran */
+}
+
+.expense-section {
+    order: 2; /* Pengeluaran akan muncul sebelum pemasukan */
+}
+
+.item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 100%; /* Lebar item menyesuaikan lebar parent */
+}
+
+@media screen and (max-width: 768px) {
+    .income-section,
+    .expense-section {
+        flex-basis: 100%; /* Menggunakan lebar penuh pada layar kecil */
+        width: 100%; /* Lebar item menyesuaikan layar */
+    }
+}
+
+
+.item .title {
+    font-weight: bold;
+}
+
+.item .nominal {
+    font-weight: bold; /* Tambahkan tebal untuk membedakan */
+}
+
+.item .nominal.income {
+    color: green; /* Atur warna hijau untuk pemasukan */
+}
+
+.item .nominal.expense {
+    color: red; /* Atur warna merah untuk pengeluaran */
+}
+
+.item .nominal::before {
+    content: attr(data-sign); /* Gunakan atribut data untuk simbol */
+}
+
+/* Penyesuaian untuk nominal pemasukan */
+.item .nominal.income::before {
+    content: '+';
+}
+
+/* Penyesuaian untuk nominal pengeluaran */
+.item .nominal.expense::before {
+    content: '-';
+}
+
+
+
+    .income-section,
+    .expense-section {
+        flex-basis: auto; /* Biarkan item menyesuaikan lebar layar */
+        margin-bottom: 20px; /* Tambahkan ruang antara section */
+    }
+
+    .income-section {
+        order: -1; /* Pemasukan akan ditampilkan di atas pada tampilan responsif */
+    }
+
+
