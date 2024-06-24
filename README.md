@@ -1,5 +1,5 @@
 Tugas Praktikum RPL
 Kelompok 2
-![alt text](D:\MyGIThub\Project\Fintrack\Fintrack App\Group 5.png)
+![alt text](D:\MyGIThub\Project\Fintrack\Fintrack App\Group 5.png?raw=true)
 Moch Alfan miftachul Huda_220605110088
 Muhammad Radiyudin_220605110120
